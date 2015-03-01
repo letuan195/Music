@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Music.iml" filepath="$PROJECT_DIR$/Music.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_SlingdinhUpPanel/library_SlingdinhUpPanel.iml" filepath="$PROJECT_DIR$/library_SlingdinhUpPanel/library_SlingdinhUpPanel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_dragsortListView/library_dragsortListView.iml" filepath="$PROJECT_DIR$/library_dragsortListView/library_dragsortListView.iml" />
+    </modules>
+  </component>
+</project>
+

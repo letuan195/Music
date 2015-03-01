@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeMiniPlayMusic"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:visibility="visible">
+        <include
+            layout="@layout/mini_playmusic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pagerPlayMusic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeMiniPlayMusic"
+        android:layout_above="@+id/viewPlayMusic" />
+
+    <View
+        android:id="@+id/viewPlayMusic"
+        android:layout_above="@+id/relativePlayMusicBottom"
+        android:layout_width="match_parent"
+        android:layout_height="20.0dip"
+        android:layout_marginTop="-20.0dip"
+        android:background="@drawable/player_bg_fade_out" />
+
+    <RelativeLayout
+        android:id="@+id/relativePlayMusicBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/playbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0dip"
+            android:paddingRight="7.0dip">
+
+            <TextView
+                android:id="@+id/tv_curent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/text_list"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekbar_progress"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3.0dip"
+                android:layout_weight="1.0"
+                android:max="100" />
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/text_list"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/playbar"
+            android:layout_marginBottom="15.0dip"
+            android:layout_marginTop="0.0dip"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_shuffle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15.0dip"
+                android:background="@null"
+                android:onClick="onClick"
+                android:padding="15.0dip"
+                android:src="@drawable/ic_player_shuffle_off" />
+
+            <ImageButton
+                android:id="@+id/btn_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="onClick"
+                android:src="@drawable/ic_player_prev" />
+
+            <ImageButton
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5.0dip"
+                android:layout_marginRight="-5.0dip"
+                android:background="@null"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:src="@drawable/ic_player_play" />
+
+            <ImageButton
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15.0dip"
+                android:background="@null"
+                android:onClick="onClick"
+                android:src="@drawable/ic_player_next" />
+
+            <ImageButton
+                android:id="@+id/btn_repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="onClick"
+                android:padding="15.0dip"
+                android:src="@drawable/ic_player_repeat_off" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

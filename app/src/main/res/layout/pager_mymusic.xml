@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.example.tuanlvk57.music.MyMusic.PagerSlidingTabStrip
+        android:id="@+id/tabsPagerMyMusic"
+        android:layout_width="match_parent"
+        android:layout_height="48dip">
+
+        </com.example.tuanlvk57.music.MyMusic.PagerSlidingTabStrip>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerMyMusic"
+        android:layout_below="@+id/tabsPagerMyMusic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </RelativeLayout>

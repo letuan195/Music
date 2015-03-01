@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeWidget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ibWidget1"
+        android:src="@drawable/linh_user"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"/>
+    <LinearLayout
+        android:id="@+id/linearWidget1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/ibWidget1"
+        android:padding="12dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitleWidget"
+            android:textSize="18sp"
+            android:text="title"
+            android:singleLine="true"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvArtistWidget"
+            android:textSize="14sp"
+            android:text="title"
+            android:singleLine="true"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            />
+        </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/viewTopWidget"
+        android:layout_below="@+id/ibWidget1"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/holo_purple"
+        />
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+        android:id="@+id/viewLeftWidget"
+        android:layout_below="@+id/viewTopWidget"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/holo_purple"
+        />
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+        android:id="@+id/viewRightWidget"
+        android:layout_below="@+id/viewTopWidget"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/holo_purple"
+        />
+    <LinearLayout
+        android:id="@+id/linearWidget2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/viewTopWidget"
+        android:layout_toLeftOf="@+id/viewRightWidget"
+        android:layout_toRightOf="@+id/viewLeftWidget"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/ibShuffleWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25.0dip"
+            android:background="@null"
+            android:padding="15.0dip"
+            android:src="@drawable/ic_player_shuffle_off" />
+
+        <ImageButton
+            android:id="@+id/ibPrevWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/widget_prev" />
+
+        <ImageButton
+            android:id="@+id/ibPlayWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25.0dip"
+            android:layout_marginRight="25.0dip"
+            android:background="@null"
+            android:clickable="true"
+            android:src="@drawable/widget_play" />
+
+        <ImageButton
+            android:id="@+id/ibNextWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15.0dip"
+            android:background="@null"
+            android:src="@drawable/widget_next" />
+
+        <ImageButton
+            android:id="@+id/ibRepeatWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="15.0dip"
+            android:layout_marginLeft="25dip"
+            android:src="@drawable/ic_player_repeat_off" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/viewBottomWidget"
+        android:layout_below="@+id/linearWidget2"
+        android:background="@android:color/holo_purple"
+        />
+    </RelativeLayout>
